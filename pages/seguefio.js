@@ -8,7 +8,7 @@ const followlaine = () => {
   const twits = content?.split("\n\n\n")
     
     
-    return(<>
+    return(<div className="max-w-6xl m-auto" > 
     <img  className="align-items-center" src="logo-segue-fio.png" alt="seguefio" />
     <p>....</p>
        <div className="flex flex-row p-6">
@@ -29,7 +29,7 @@ const followlaine = () => {
           </div>
        
        </div> 
-    </>)
+    </ div>)
 }
 
 export default followlaine
