@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form"
-
+import Twits from "../Components/twis"
 
 const followlaine = () => {
   const {register, watch} = useForm()  
@@ -22,9 +22,8 @@ const followlaine = () => {
             
             <h2>Twits:</h2>
            
-            { twits?.map( (twit) => (<div className=" shadow border border-red-600 rounded-lg p-4">
-            Twits {twit} 
-              </div>
+            { twits?.map( (twit, index) =>( 
+             <Twits twit={twit} key={index}  />
              ))}
           
           </div>
