@@ -4,7 +4,7 @@ const followlaine = () => {
     return(<>
     <img  className="align-items-center" src="logo-segue-fio.png" alt="seguefio" />
     <p>....</p>
-       <div className="flex flex-row bg-gray-400 ">
+       <div className="flex flex-row bg-gray-300 ">
          <div>
           <textarea  className="w-full h-screen" ></textarea>
          </div>
