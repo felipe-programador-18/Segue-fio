@@ -4,7 +4,7 @@ import Twits from "../Components/twis"
 const followlaine = () => {
   const {register, watch} = useForm()  
   
-  const content = watch("content")
+  const content = watch("content") || ""
   const twits = content?.split("\n\n\n")
     
     
@@ -13,7 +13,7 @@ const followlaine = () => {
     <p>....</p>
        <div className="flex flex-row p-6">
         
-         <div className="flex-1" >
+         <div className="flex-1 m-4" >
           <h2>Insights: </h2>
           <textarea {...register("content")}  className="w-full h-screen" ></textarea>
          </div>
