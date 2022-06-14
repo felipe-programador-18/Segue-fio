@@ -3,15 +3,18 @@ import {IoIosCopy} from "react-icons/io"
 
 const Twits = ({twit}) => {
   const content = twit.trim()
-    // this case i am caught to props 
-    // this verify code to learning and traning more!!
-    // const len = twit.lenght
-
-    const len = content.length    
+  
+// this function serve to save text!!!
+  const copyRight = async() => {
+  await  navigator.clipboard.writeText(content)
+  }
+  
+  const len = content.length    
 return(
         <>
-        <div className=" relative shadow border border-blue-700 border-indigo-500/200 rounded-lg p-4 my-2 cursor-pointer hover:bg-blue-100 ">
-        <IoIosCopy className="absolute top-2 right-4   " />
+        <div className="transition-all group relative shadow border border-blue-700 border-indigo-500/200 rounded-lg p-4 my-2 cursor-pointer hover:bg-blue-100 "  onClick={copyRight} >
+
+        <IoIosCopy className="opacity-0 absolute top-2 right-4 group-hover:opacity-100" />
         
         {content}
        
