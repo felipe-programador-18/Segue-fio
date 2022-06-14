@@ -3,10 +3,11 @@ import {IoIosCopy} from "react-icons/io"
 
 const Twits = ({twit, showCounter= false, current, total}) => {
   let content = twit.trim()
-  // this strategy is to showcounter making part of content// 
+  // this strategy is to showcounter making part of // 
   if(showCounter){
     content += '\n' + current + '/' + total
   }
+
 
 // this function serve to save text!!!
   const copyRight = async() => {
@@ -22,6 +23,7 @@ return(
         <pre className="font-sans" >
         {content}
         </pre>
+        
         <p className="text-right text-sm text-green-800 h-10  "  >
    { len <= 280 && <span className="text-blue-700 bg-green-100 rounded mb-2  ">{len} </span> }
 
