@@ -55,7 +55,7 @@ const share = async () => {
         
          <div className="flex-1 m-4" >
           <h2>Contéudo: </h2>
-          <textarea {...register("content")}  placeholder='Digite seu conteúdo aqui ...'  className="w-full h-screen" ></textarea>
+          <textarea {...register("content")}  placeholder='Digite seu conteúdo aqui  ...'  className="w-full h-screen" ></textarea>
          </div>
          
          <div className="flex-1 p-2">
