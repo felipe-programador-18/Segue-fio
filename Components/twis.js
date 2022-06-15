@@ -17,7 +17,7 @@ const Twits = ({twit, showCounter= false, current, total}) => {
   const len = content.length    
 return(
         <>
-        <div className="transition-all group relative shadow border border-blue-700 border-indigo-500/200 rounded-lg p-4 my-2 cursor-pointer hover:bg-blue-100 "  onClick={copyRight} >
+        <div className="transition-all group relative shadow border border-blue-700 border-indigo-500/200 rounded-lg p-4 my-2 cursor-pointer hover:bg-blue-100 border-dashed "  onClick={copyRight} >
 
         <IoIosCopy className="opacity-0 absolute top-2 right-4 group-hover:opacity-100" />
         <pre className="font-sans" >
